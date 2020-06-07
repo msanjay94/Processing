@@ -1,0 +1,42 @@
+class cue
+{
+void cueball()
+{
+if((mouseX<570&&mouseX>30)&&(mouseY<270&&mouseY>30))
+{
+  ellipse(mouseX,mouseY,18,18);
+}
+if(mouseX>=570&&mouseY<270&&mouseY>30)
+{
+  ellipse(570,mouseY,18,18);
+}
+if(mouseX<=30&&mouseY<270&&mouseY>30)
+{
+  ellipse(30,mouseY,18,18);
+}
+if(mouseY>=270&&mouseX<570&&mouseX>30)
+{
+  ellipse(mouseX,270,18,18);
+}
+if(mouseY<=30&&mouseX<570&&mouseX>30)
+{
+  ellipse(mouseX,30,18,18);
+}
+if(mouseY<=30&&mouseX<=30)
+{
+  ellipse(30,30,18,18);
+}
+if(mouseY>=270&&mouseX<=30)
+{
+  ellipse(30,270,18,18);
+}
+if(mouseY<=30&&mouseX>=570)
+{
+  ellipse(570,30,18,18);
+}
+if(mouseY>=270&&mouseX>=570)
+{
+  ellipse(570,270,18,18);
+}
+}
+}

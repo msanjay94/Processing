@@ -1,0 +1,175 @@
+class generator {
+  int cx1, cy1,cy2,cx2,cy3,cx3,cx4,cy4;
+float a,b;
+float Radius;
+float Diameter;
+float s=0.0;
+float ds=0.025;
+generator(){
+  Radius =100; 
+  Diameter=200;
+  cx1 = (width/5)-45;
+  cy1 = height/2+25;
+  cx2 = (width*2/5)-15;
+  cy2 = height/2+25;
+  cx3 = (width*3/5)+15;
+  cy3 = height/2+25;
+  cx4 = (width*4/5)+45;
+  cy4 = height/2+25;
+  }
+  void run() {
+
+    fill(255);
+    //ellipse(cx1, cy1, Diameter+10, Diameter+10);
+    stroke(0);
+    strokeWeight(2);
+    stroke(255, 0, 0);
+    obs[0].pointObs((cx1+cos(s+1)*Radius), (cy1 + sin(s+1) * Radius));
+    obs[1].pointObs((cx1+cos(s+2.1)*Radius), (cy1 + sin(s+2.1) * Radius));
+    obs[2].pointObs((cx1+cos(s+1)*Radius/2), (cy1 + sin(s+1) * Radius/2));
+    obs[3].pointObs((cx1+cos(s+2.1)*Radius/2), (cy1 + sin(s+2.1) * Radius/2));
+    obs[4].pointObs((cx1+cos(s+1)*Radius/4), (cy1 + sin(s+1) * Radius/4));
+    obs[5].pointObs((cx1+cos(s+2.1)*Radius/4), (cy1 + sin(s+2.1) * Radius/4));
+    obs[6].pointObs((cx1+cos(s+1)*Radius/4*3), (cy1 + sin(s+1) * Radius/4*3));
+    obs[7].pointObs((cx1+cos(s+2.1)*Radius/4*3), (cy1 + sin(s+2.1) * Radius/4*3));
+    obs[8].pointObs((cx1+cos(s+1)*(Radius+(Radius/2-Radius/4))), (cy1 + sin(s+1) * (Radius+(Radius/2-Radius/4))));
+    obs[9].pointObs((cx1+cos(s+2.1)*(Radius+(Radius/2-Radius/4))), (cy1 + sin(s+2.1) * (Radius+(Radius/2-Radius/4))));
+    //#######1##########################################################
+    obs[10].pointObs((cx1+cos(s+1)*-Radius), (cy1 + sin(s+1) * -Radius));
+    obs[11].pointObs((cx1+cos(s+2.1)*-Radius), (cy1 + sin(s+2.1) * -Radius));
+    obs[12].pointObs((cx1+cos(s+1)*-Radius/2), (cy1 + sin(s+1) * -Radius/2));
+    obs[13].pointObs((cx1+cos(s+2.1)*-Radius/2), (cy1 + sin(s+2.1) * -Radius/2));
+    obs[14].pointObs((cx1+cos(s+1)*-Radius/4), (cy1 + sin(s+1) * -Radius/4));
+    obs[15].pointObs((cx1+cos(s+2.1)*-Radius/4), (cy1 + sin(s+2.1) * -Radius/4));
+    obs[16].pointObs((cx1+cos(s+1)*-Radius/4*3), (cy1 + sin(s+1) * -Radius/4*3));
+    obs[17].pointObs((cx1+cos(s+2.1)*-Radius/4*3), (cy1 + sin(s+2.1) * -Radius/4*3));
+    obs[18].pointObs((cx1+cos(s+1)*-(Radius+(Radius/2-Radius/4))), (cy1 + sin(s+1) * -(Radius+(Radius/2-Radius/4))));
+    obs[19].pointObs((cx1+cos(s+2.1)*-(Radius+(Radius/2-Radius/4))), (cy1 + sin(s+2.1) * -(Radius+(Radius/2-Radius/4))));
+    //#######1##########################################################
+    obs[20].pointObs((cx1+cos(s)*Radius/4), (cy1 + sin(s) * Radius/4));
+    obs[21].pointObs((cx1+cos(s)*Radius/2), (cy1 + sin(s) * Radius/2));
+    obs[22].pointObs((cx1+cos(s)*Radius*3/4), (cy1 + sin(s) * Radius*3/4));
+    obs[23].pointObs((cx1+cos(s)*Radius), (cy1 + sin(s) * Radius));
+    obs[24].pointObs((cx1+cos(s)*(-Radius)), (cy1 + sin(s) * (-Radius)));
+    obs[25].pointObs((cx1+cos(s)*(Radius+(Radius/2-Radius/4))), (cy1 + sin(s) * (Radius+(Radius/2-Radius/4))));
+    obs[26].pointObs(cx1, cy1);
+    obs[27].pointObs((cx1+cos(s)*(-Radius/4)), (cy1 + sin(s) * (-Radius/4)));
+    obs[28].pointObs((cx1+cos(s)*(-Radius/4*3)), (cy1 + sin(s) * (-Radius/4*3)));
+    obs[29].pointObs((cx1+cos(s)*(-Radius/2)), (cy1 + sin(s) * (-Radius/2)));
+    obs[30].pointObs((cx1+cos(s)*-(Radius+(Radius/2-Radius/4))), (cy1 + sin(s) * -(Radius+(Radius/2-Radius/4))));
+    //s+=ds;
+    stroke(255);
+    //ellipse(cx2, cy2, Diameter, Diameter);
+    stroke(0);
+    strokeWeight(2);
+    stroke(255, 0, 0);
+    obs[31].pointObs((cx2+cos(s+1)*Radius), (cy2 + sin(s+1) * Radius));
+    obs[32].pointObs((cx2+cos(s+2.1)*Radius), (cy2 + sin(s+2.1) * Radius));
+    obs[33].pointObs((cx2+cos(s+1)*Radius/2), (cy2 + sin(s+1) * Radius/2));
+    obs[34].pointObs((cx2+cos(s+2.1)*Radius/2), (cy2 + sin(s+2.1) * Radius/2));
+    obs[35].pointObs((cx2+cos(s+1)*Radius/4), (cy2 + sin(s+1) * Radius/4));
+    obs[36].pointObs((cx2+cos(s+2.1)*Radius/4), (cy2 + sin(s+2.1) * Radius/4));
+    obs[37].pointObs((cx2+cos(s+1)*Radius/4*3), (cy2 + sin(s+1) * Radius/4*3));
+    obs[38].pointObs((cx2+cos(s+2.1)*Radius/4*3), (cy2 + sin(s+2.1) * Radius/4*3));
+    obs[39].pointObs((cx2+cos(s+1)*(Radius+(Radius/2-Radius/4))), (cy2 + sin(s+1) * (Radius+(Radius/2-Radius/4))));
+    obs[40].pointObs((cx2+cos(s+2.1)*(Radius+(Radius/2-Radius/4))), (cy2 + sin(s+2.1) * (Radius+(Radius/2-Radius/4))));
+    //#######1##########################################################
+    obs[41].pointObs((cx2+cos(s+1)*-Radius), (cy2 + sin(s+1) * -Radius));
+    obs[42].pointObs((cx2+cos(s+2.1)*-Radius), (cy2 + sin(s+2.1) * -Radius));
+    obs[43].pointObs((cx2+cos(s+1)*-Radius/2), (cy2 + sin(s+1) * -Radius/2));
+    obs[44].pointObs((cx2+cos(s+2.1)*-Radius/2), (cy2 + sin(s+2.1) * -Radius/2));
+    obs[45].pointObs((cx2+cos(s+1)*-Radius/4), (cy2 + sin(s+1) * -Radius/4));
+    obs[46].pointObs((cx2+cos(s+2.1)*-Radius/4), (cy2 + sin(s+2.1) * -Radius/4));
+    obs[47].pointObs((cx2+cos(s+1)*-Radius/4*3), (cy2 + sin(s+1) * -Radius/4*3));
+    obs[48].pointObs((cx2+cos(s+2.1)*-Radius/4*3), (cy2 + sin(s+2.1) * -Radius/4*3));
+    obs[49].pointObs((cx2+cos(s+1)*-(Radius+(Radius/2-Radius/4))), (cy2 + sin(s+1) * -(Radius+(Radius/2-Radius/4))));
+    obs[50].pointObs((cx2+cos(s+2.1)*-(Radius+(Radius/2-Radius/4))), (cy2 + sin(s+2.1) * -(Radius+(Radius/2-Radius/4))));
+    //#######1##########################################################
+    obs[51].pointObs((cx2+cos(s)*Radius/4), (cy2 + sin(s) * Radius/4));
+    obs[52].pointObs((cx2+cos(s)*Radius/2), (cy2 + sin(s) * Radius/2));
+    obs[53].pointObs((cx2+cos(s)*Radius*3/4), (cy2 + sin(s) * Radius*3/4));
+    obs[54].pointObs((cx2+cos(s)*Radius), (cy2 + sin(s) * Radius));
+    obs[55].pointObs((cx2+cos(s)*(-Radius)), (cy2 + sin(s) * (-Radius)));
+    obs[56].pointObs((cx2+cos(s)*(Radius+(Radius/2-Radius/4))), (cy2 + sin(s) * (Radius+(Radius/2-Radius/4))));
+    obs[57].pointObs(cx2, cy2);
+    obs[58].pointObs((cx2+cos(s)*(-Radius/4)), (cy2 + sin(s) * (-Radius/4)));
+    obs[59].pointObs((cx2+cos(s)*(-Radius/4*3)), (cy2 + sin(s) * (-Radius/4*3)));
+    obs[60].pointObs((cx2+cos(s)*(-Radius/2)), (cy2 + sin(s) * (-Radius/2)));
+    obs[61].pointObs((cx2+cos(s)*-(Radius+(Radius/2-Radius/4))), (cy2 + sin(s) * -(Radius+(Radius/2-Radius/4))));
+    //s+ds;
+    stroke(255);
+    //ellipse(cx3, cy3, Diameter, Diameter);
+    stroke(0);
+    strokeWeight(2);
+    stroke(255, 0, 0);
+   obs[62].pointObs((cx3+cos(s+1)*Radius), (cy3 + sin(s+1) * Radius));
+    obs[63].pointObs((cx3+cos(s+2.1)*Radius), (cy3 + sin(s+2.1) * Radius));
+    obs[64].pointObs((cx3+cos(s+1)*Radius/2), (cy3 + sin(s+1) * Radius/2));
+    obs[65].pointObs((cx3+cos(s+2.1)*Radius/2), (cy3 + sin(s+2.1) * Radius/2));
+    obs[66].pointObs((cx3+cos(s+1)*Radius/4), (cy3 + sin(s+1) * Radius/4));
+    obs[67].pointObs((cx3+cos(s+2.1)*Radius/4), (cy3 + sin(s+2.1) * Radius/4));
+    obs[68].pointObs((cx3+cos(s+1)*Radius/4*3), (cy3 + sin(s+1) * Radius/4*3));
+    obs[69].pointObs((cx3+cos(s+2.1)*Radius/4*3), (cy3 + sin(s+2.1) * Radius/4*3));
+    obs[70].pointObs((cx3+cos(s+1)*(Radius+(Radius/2-Radius/4))), (cy3 + sin(s+1) * (Radius+(Radius/2-Radius/4))));
+    obs[71].pointObs((cx3+cos(s+2.1)*(Radius+(Radius/2-Radius/4))), (cy3 + sin(s+2.1) * (Radius+(Radius/2-Radius/4))));
+    //#######1##########################################################
+    obs[72].pointObs((cx3+cos(s+1)*-Radius), (cy3 + sin(s+1) * -Radius));
+    obs[73].pointObs((cx3+cos(s+2.1)*-Radius), (cy3 + sin(s+2.1) * -Radius));
+    obs[74].pointObs((cx3+cos(s+1)*-Radius/2), (cy3 + sin(s+1) * -Radius/2));
+    obs[75].pointObs((cx3+cos(s+2.1)*-Radius/2), (cy3 + sin(s+2.1) * -Radius/2));
+    obs[76].pointObs((cx3+cos(s+1)*-Radius/4), (cy3 + sin(s+1) * -Radius/4));
+    obs[77].pointObs((cx3+cos(s+2.1)*-Radius/4), (cy3 + sin(s+2.1) * -Radius/4));
+    obs[78].pointObs((cx3+cos(s+1)*-Radius/4*3), (cy3 + sin(s+1) * -Radius/4*3));
+    obs[79].pointObs((cx3+cos(s+2.1)*-Radius/4*3), (cy3 + sin(s+2.1) * -Radius/4*3));
+    obs[80].pointObs((cx3+cos(s+1)*-(Radius+(Radius/2-Radius/4))), (cy3 + sin(s+1) * -(Radius+(Radius/2-Radius/4))));
+    obs[81].pointObs((cx3+cos(s+2.1)*-(Radius+(Radius/2-Radius/4))), (cy3 + sin(s+2.1) * -(Radius+(Radius/2-Radius/4))));
+    //######1##########################################################
+    obs[82].pointObs((cx3+cos(s)*Radius/4), (cy3 + sin(s) * Radius/4));
+    obs[83].pointObs((cx3+cos(s)*Radius/2), (cy3 + sin(s) * Radius/2));
+    obs[84].pointObs((cx3+cos(s)*Radius*3/4), (cy3 + sin(s) * Radius*3/4));
+    obs[85].pointObs((cx3+cos(s)*Radius), (cy3 + sin(s) * Radius));
+    obs[86].pointObs((cx3+cos(s)*(-Radius)), (cy3 + sin(s) * (-Radius)));
+    obs[87].pointObs((cx3+cos(s)*(Radius+(Radius/2-Radius/4))), (cy3 + sin(s) * (Radius+(Radius/2-Radius/4))));
+    obs[88].pointObs(cx3, cy3);
+    obs[89].pointObs((cx3+cos(s)*(-Radius/4)), (cy3 + sin(s) * (-Radius/4)));
+    obs[90].pointObs((cx3+cos(s)*(-Radius/4*3)), (cy3 + sin(s) * (-Radius/4*3)));
+    obs[91].pointObs((cx3+cos(s)*(-Radius/2)), (cy3 + sin(s) * (-Radius/2)));
+    obs[92].pointObs((cx3+cos(s)*-(Radius+(Radius/2-Radius/4))), (cy3 + sin(s) * -(Radius+(Radius/2-Radius/4))));
+
+    s+=ds;
+obs[93].pointObs((cx4+cos(s+1)*Radius), (cy4 + sin(s+1) * Radius));
+    obs[94].pointObs((cx4+cos(s+2.1)*Radius), (cy4 + sin(s+2.1) * Radius));
+    obs[95].pointObs((cx4+cos(s+1)*Radius/2), (cy4 + sin(s+1) * Radius/2));
+    obs[96].pointObs((cx4+cos(s+2.1)*Radius/2), (cy4 + sin(s+2.1) * Radius/2));
+    obs[97].pointObs((cx4+cos(s+1)*Radius/4), (cy4 + sin(s+1) * Radius/4));
+    obs[98].pointObs((cx4+cos(s+2.1)*Radius/4), (cy4 + sin(s+2.1) * Radius/4));
+    obs[99].pointObs((cx4+cos(s+1)*Radius/4*3), (cy4 + sin(s+1) * Radius/4*3));
+    obs[100].pointObs((cx4+cos(s+2.1)*Radius/4*3), (cy4 + sin(s+2.1) * Radius/4*3));
+    obs[101].pointObs((cx4+cos(s+1)*(Radius+(Radius/2-Radius/4))), (cy4 + sin(s+1) * (Radius+(Radius/2-Radius/4))));
+    obs[102].pointObs((cx4+cos(s+2.1)*(Radius+(Radius/2-Radius/4))), (cy4 + sin(s+2.1) * (Radius+(Radius/2-Radius/4))));
+    //######1##########################################################
+    obs[103].pointObs((cx4+cos(s+1)*-Radius), (cy4 + sin(s+1) * -Radius));
+    obs[104].pointObs((cx4+cos(s+2.1)*-Radius), (cy4 + sin(s+2.1) * -Radius));
+    obs[105].pointObs((cx4+cos(s+1)*-Radius/2), (cy4 + sin(s+1) * -Radius/2));
+    obs[106].pointObs((cx4+cos(s+2.1)*-Radius/2), (cy4 + sin(s+2.1) * -Radius/2));
+    obs[107].pointObs((cx4+cos(s+1)*-Radius/4), (cy4 + sin(s+1) * -Radius/4));
+    obs[108].pointObs((cx4+cos(s+2.1)*-Radius/4), (cy4 + sin(s+2.1) * -Radius/4));
+    obs[109].pointObs((cx4+cos(s+1)*-Radius/4*3), (cy4 + sin(s+1) * -Radius/4*3));
+    obs[110].pointObs((cx4+cos(s+2.1)*-Radius/4*3), (cy4 + sin(s+2.1) * -Radius/4*3));
+    obs[111].pointObs((cx4+cos(s+1)*-(Radius+(Radius/2-Radius/4))), (cy4 + sin(s+1) * -(Radius+(Radius/2-Radius/4))));
+    obs[112].pointObs((cx4+cos(s+2.1)*-(Radius+(Radius/2-Radius/4))), (cy4 + sin(s+2.1) * -(Radius+(Radius/2-Radius/4))));
+    //######1##########################################################
+    obs[113].pointObs((cx4+cos(s)*Radius/4), (cy4 + sin(s) * Radius/4));
+    obs[114].pointObs((cx4+cos(s)*Radius/2), (cy4 + sin(s) * Radius/2));
+    obs[115].pointObs((cx4+cos(s)*Radius*3/4), (cy4 + sin(s) * Radius*3/4));
+    obs[116].pointObs((cx4+cos(s)*Radius), (cy4 + sin(s) * Radius));
+    obs[117].pointObs((cx4+cos(s)*(-Radius)), (cy4 + sin(s) * (-Radius)));
+    obs[118].pointObs((cx4+cos(s)*(Radius+(Radius/2-Radius/4))), (cy4 + sin(s) * (Radius+(Radius/2-Radius/4))));
+    obs[119].pointObs(cx4, cy4);
+    obs[120].pointObs((cx4+cos(s)*(-Radius/4)), (cy4 + sin(s) * (-Radius/4)));
+    obs[121].pointObs((cx4+cos(s)*(-Radius/4*3)), (cy4 + sin(s) * (-Radius/4*3)));
+    obs[122].pointObs((cx4+cos(s)*(-Radius/2)), (cy4 + sin(s) * (-Radius/2)));
+    obs[123].pointObs((cx4+cos(s)*-(Radius+(Radius/2-Radius/4))), (cy4 + sin(s) * -(Radius+(Radius/2-Radius/4))));  
+    obsReady = true;
+  }
+}

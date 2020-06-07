@@ -1,0 +1,9 @@
+PROTOTYPE 1 - 14 jan 2015
+	- 320x480 display(16:9)
+	GOAL:
+	    Given a particular direction, at constant speed, a ball is generated and it
+	    moves along that direction at that speed, while at the same time decelerating
+	    slowly.
+	INPUT:
+	    - Direction, from a static ball generator location(RED DOT), towards a moving
+    	      position(GREEN DOT). Its position is changed by the mouse location.
